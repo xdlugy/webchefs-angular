@@ -1,61 +1,33 @@
 <div class="bodywrapper">
-  <menu>
-    <div class="dropdown">
-      <div></div>
-      <div></div>
-      <div></div>
+  <app-menu></app-menu>
+  <header>
+    <div class="leftwrapper">
+      <div class="count">
+        <p>ZLECENIA</p>
+        <p>245</p>
+      </div>
+      <div class="count">
+        <p>DEPOZYTY</p>
+        <p>245</p>
+      </div>
+      <div class="count">
+        <p>ZAMÓWIENIA</p>
+        <p>245</p>
+      </div>
     </div>
-    <div class="date">
-      <h3>Sobota</h3>
-      <h2>4 Luty</h2>
-      <h3>2023</h3>
+    <div class="rightwrapper">
+      <div class="notifications">
+        <div class="img"><p>19</p></div>
+      </div>
+      <div class="account">
+        <div class="wrapper">
+          <div class="img"></div>
+          <p>Warsztat A12</p>
+        </div>
+        <button>&#9662;</button>
+      </div>
     </div>
-    <hr>
-    <nav>
-      <div class="statistics">
-        <p>Statistics</p>
-      </div>
-      <div class="users">
-        <p>Users</p>
-        <ul>
-          <li>User List</li>
-          <li>User Edit</li>
-          <li>Roles and Permissions</li>
-          <li>Settings</li>
-        </ul>
-      </div>
-    </nav>
-  </menu>
-  <div class="mainwrapper">
-    <header>
-      <div class="leftwrapper">
-        <div class="count">
-          <p>ZLECENIA</p>
-          <p>245</p>
-        </div>
-        <div class="count">
-          <p>DEPOZYTY</p>
-          <p>245</p>
-        </div>
-        <div class="count">
-          <p>ZAMÓWIENIA</p>
-          <p>245</p>
-        </div>
-      </div>
-      <div class="rightwrapper">
-        <div class="notifications">
-          <div><p>19</p></div>
-          🔔
-        </div>
-        <div class="account">
-          <div>
-            <img />
-            <p>Warsztat A12</p>
-          </div>
-          <button>&#9662;</button>
-        </div>
-      </div>
-    </header>
+  </header>
   <main>
     <nav>
       <div class="left">
@@ -63,10 +35,7 @@
         <h2>Hugh Jackman</h2>
       </div>
       <div class="right">
-        <button class="delete">DELETE</button>
-        <button class="block">BLOCK</button>
-        <button class="password">SET PASSWORD</button>
-        <button class="save">SAVE</button>
+        <app-user-edit-button-wrapper></app-user-edit-button-wrapper>
       </div>
     </nav>
     <div class="useredit">
@@ -164,6 +133,7 @@
           <div class="right">
             <div class="file">
               <input type="file" name="file">
+              <div class="img"></div>
               <p>Drag and drop files</p>
               <p>Drag and drop files or select from your files</p>
             </div>
@@ -193,7 +163,5 @@
         </form>
       </div>
     </div>
-    
   </main>
-  </div>
 </div>

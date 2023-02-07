@@ -1,0 +1,140 @@
+.menuHidden {
+    width: 88px;
+    height: 62px;
+}
+
+.hidden {
+    display: none;
+}
+
+menu {
+    float: left;
+    border: 1px solid #DBDDE0;
+    width: 276px;
+    margin: 0;
+    padding: 0;
+
+    .dropdown {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 24px;
+        height: 24px;
+        margin: 32px;
+        margin-top: 20px;
+        margin-bottom: 0;
+
+        div {
+            height: 3px;
+            border-radius: 5px;
+            background-color: #6E7C98;
+        }
+
+        div:nth-child(3) {
+            background-color: #FABB2B;
+        }
+    }
+
+    .dropdown:hover {
+        cursor: pointer;
+    }
+
+    .date {
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-end;
+        padding-left: 32px;
+        width: 276px;
+        height: 120px;
+        margin-top: 20px;
+
+        h2, h3 {
+            font-weight: normal;
+            margin: 0;
+            margin-bottom: 3px;
+        }
+
+        h2 {
+            font-size: 26px;
+        }
+
+        h3 {
+            color: #9EA1A8;
+            font-size: 14px;
+        }
+    }
+
+    hr {
+        width: 80%;
+        border: none;
+        height: 1px;
+        background-color: #DBDDE0;
+    }
+
+    nav {
+        margin-top: 24px;
+        height: 100%;
+        color: #6E7075;
+
+        .statistics {
+            display: flex;
+            align-items: center;
+            padding-left: 24px;
+            height: 44px;
+            line-height: 44px;
+
+            .img {
+                height: 40px;
+                width: 40px;
+                background-image: url("../../assets/img/Statistics.png");
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+
+            p {
+                margin-left: 10px;
+            }
+        }
+
+        .users {
+            padding-left: 24px;
+            background-color: #F3F4F5;
+            border: 1px solid #DBDDE0;
+            border-right: none;
+            border-left: none;
+
+            .img {
+                float: left;
+                height: 40px;
+                width: 40px;
+                background-image: url("../../assets/img/Users.png");
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+
+            p {
+                height: 44px;
+                line-height: 44px;
+                margin: 0;
+                margin-left: 50px;
+                color: #5E92FC;
+            }
+
+            ul {
+                margin: 0;
+                padding-left: 68px;
+            }
+
+            li {
+                font-size: 12px;
+                height: 38px;
+                line-height: 38px;
+                list-style: square;
+            }
+
+            li:hover {
+                color: #5E92FC;
+            }
+        }
+    }
+}

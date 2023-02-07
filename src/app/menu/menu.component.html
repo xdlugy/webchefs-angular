@@ -1,0 +1,31 @@
+<menu [ngClass]="isShown ? '' : 'menuHidden'">
+    <div class="dropdown" (click)="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div [ngClass]="isShown ? 'date' : 'hidden'">
+      <h3>Sobota</h3>
+      <h2>4 Luty</h2>
+      <h3>2023</h3>
+    </div>
+    <hr [ngClass]="isShown ? '' : 'hidden'">
+    <nav [ngClass]="isShown ? '' : 'hidden'">
+      <div class="statistics">
+        <div class="img"></div>
+        <p>Statistics</p>
+      </div>
+      <div class="users">
+        <div class="wrapper">
+          <div class="img"></div>
+          <p>Users</p>
+        </div>
+        <ul>
+          <li>User List</li>
+          <li>User Edit</li>
+          <li>Roles and Permissions</li>
+          <li>Settings</li>
+        </ul>
+      </div>
+    </nav>
+  </menu>
