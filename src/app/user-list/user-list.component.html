@@ -1,0 +1,136 @@
+<main>
+    <nav>
+      <div class="left">
+        <p>User / User Edit</p>
+        <h2>Hugh Jackman</h2>
+      </div>
+      <div class="right">
+        <app-user-edit-button-wrapper></app-user-edit-button-wrapper>
+      </div>
+    </nav>
+    <div class="useredit">
+      <div class="left">
+        <nav>
+          <div class="pwrapper"><p>Logs</p></div>
+          <div class="pwrapper"><p>Permissions</p></div>
+        </nav>
+        <div class="role">
+          <div class="leftwrapper">
+            <h2>Role:</h2>
+            <p>Performer</p>
+          </div>
+          <div class="rightwrapper">
+            <label for="role">Assign Role</label>
+            <select name="role">
+              <option>Performer</option>
+            </select>
+          </div>
+        </div>
+        <div class="table">
+          <div class="head">
+            <p>Object</p>
+            <p>Action</p>
+          </div>
+          <div class="category">
+            <p>MOVIES</p>
+          </div>
+          <div class="content">
+            <div class="list">
+              <div>Script</div>
+              <div>
+                <button class="create">CREATE</button>
+                <button class="read">READ</button>
+                <button class="update">UPDATE</button>
+                <button class="delete">DELETE</button>
+              </div>
+            </div>
+            <div class="list">
+              <div>Props</div>
+              <div>
+                <button class="create">CREATE</button>
+                <button class="read">READ</button>
+                <button class="update">UPDATE</button>
+                <button class="delete">DELETE</button>
+              </div>
+            </div>
+            <div class="list">
+              <div>Screens</div>
+              <div>
+                <button class="create">CREATE</button>
+                <button class="read">READ</button>
+                <button class="update">UPDATE</button>
+                <button class="delete">DELETE</button>
+              </div>
+            </div>
+            <div class="list">
+              <div>Money</div>
+              <div>
+                <button class="create">CREATE</button>
+                <button class="read">READ</button>
+                <button class="update">UPDATE</button>
+                <button class="delete">DELETE</button>
+              </div>
+            </div>
+            <div class="list">
+              <div>Stunt</div>
+              <div>
+                <button class="create">CREATE</button>
+                <button class="read">READ</button>
+                <button class="update">UPDATE</button>
+                <button class="delete">DELETE</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <nav>
+          <div class="pwrapper"><p>Załączniki</p></div>
+          <div class="pwrapper"><p>Historia</p></div>
+        </nav>
+        <div class="head">
+          <label for="zalaczniki">Załączniki</label>
+        </div>
+        <form name="zalaczniki">
+          <div class="left">
+            <label for="name">Name</label>
+            <input type="text" name="name">
+            <label for="lastname">Last Name</label>
+            <input type="name" name="lastname">
+            <label for="date">Birth Date</label>
+            <input type="date" name="date">
+          </div>
+          <div class="right">
+            <div class="file">
+              <input type="file" name="file">
+              <div class="img"></div>
+              <p>Drag and drop files</p>
+              <p>Drag and drop files or select from your files</p>
+            </div>
+            <label for="citizenship">Citizenship</label>
+            <select name="citizenship">
+            <option>Australia</option>
+            <option>United Kingdom</option>
+          </select>
+          </div>
+        </form>
+        <div class="head">
+          <label for="contact">Contact information</label>
+        </div>
+        <form name="contact">
+          <div class="left">
+            <label for="instagram">Instagram</label>
+            <input type="text" name="instagram">
+            <label for="twitter">Twitter</label>
+            <input type="text" name="twitter">
+          </div>
+          <div class="right">
+            <label for="email">Email</label>
+            <input type="email" name="email">
+            <label for="facebook">Facebook</label>
+            <input type="text" name="facebook">
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>

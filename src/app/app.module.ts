@@ -9,6 +9,11 @@ import { BlockButtonComponent } from './user-edit-button-wrapper/block-button/bl
 import { PasswordButtonComponent } from './user-edit-button-wrapper/password-button/password-button.component';
 import { SaveButtonComponent } from './user-edit-button-wrapper/save-button/save-button.component';
 import { MenuComponent } from './menu/menu.component';
+import { UserListComponent } from './user-list/user-list.component';
+import { UserEditComponent } from './user-edit/user-edit.component';
+import { RolesAndPermissionsComponent } from './roles-and-permissions/roles-and-permissions.component';
+import { SettingsComponent } from './settings/settings.component';
+import { StatisticsComponent } from './statistics/statistics.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +23,12 @@ import { MenuComponent } from './menu/menu.component';
     BlockButtonComponent,
     PasswordButtonComponent,
     SaveButtonComponent,
-    MenuComponent
+    MenuComponent,
+    UserListComponent,
+    UserEditComponent,
+    RolesAndPermissionsComponent,
+    SettingsComponent,
+    StatisticsComponent
   ],
   imports: [
     BrowserModule,

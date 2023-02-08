@@ -11,20 +11,20 @@
     </div>
     <hr [ngClass]="isShown ? '' : 'hidden'">
     <nav [ngClass]="isShown ? '' : 'hidden'">
-      <div class="statistics">
+      <div class="statistics" routerLink="/statistics" routerLinkActive="active" ariaCurrentWhenActive="page">
         <div class="img"></div>
         <p>Statistics</p>
       </div>
-      <div class="users">
+      <div class="users" routerLinkActive="activeUsers" ariaCurrentWhenActive="page">
         <div class="wrapper">
           <div class="img"></div>
-          <p>Users</p>
+          <p routerLink="/user-list">Users</p>
         </div>
-        <ul>
-          <li>User List</li>
-          <li>User Edit</li>
-          <li>Roles and Permissions</li>
-          <li>Settings</li>
+        <ul class="hidden" routerLinkActive="ulactive">
+          <li routerLink="/user-list" routerLinkActive="active" ariaCurrentWhenActive="page">User List</li>
+          <li routerLink="/user-edit" routerLinkActive="active" ariaCurrentWhenActive="page">User Edit</li>
+          <li routerLink="/roles-and-permissions" routerLinkActive="active" ariaCurrentWhenActive="page">Roles and Permissions</li>
+          <li routerLink="/settings" routerLinkActive="active" ariaCurrentWhenActive="page">Settings</li>
         </ul>
       </div>
     </nav>
